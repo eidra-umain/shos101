@@ -31,4 +31,4 @@ All **open-source software** provides access to the source code, but not all **f
 
 ---
 
-[➡️ **Next:**](step-03.md)
+[➡️ **Next**](step-03.md)

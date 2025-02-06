@@ -251,4 +251,4 @@ If you see version numbers, **you’re ready to start! 🚀**
 
 ---
 
-[➡️ **Next:**](step-06.md)
+[➡️ **Next**](step-06.md)

@@ -282,8 +282,3 @@ Here are the official Docker images and documentation for the apps we’ll be us
  - [Docker Image](https://hub.docker.com/r/apache/airflow)
 
  - [Official Docs](https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html)
-
-
----
-
-[➡️ **Next:**](step-06.md)

@@ -42,4 +42,4 @@ In this codelab, you’ll:
 
 By the end, you’ll have your first self-hosted app up and running! 🚀
 
-[➡️ **Next:**](step-02.md)
+[➡️ **Next**](step-02.md)

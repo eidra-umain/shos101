@@ -110,4 +110,4 @@ For those who like to dive deeper, here are some useful links:
 
 ---
 
-[➡️ **Next:**](step-04.md)
+[➡️ **Next**](step-04.md)
