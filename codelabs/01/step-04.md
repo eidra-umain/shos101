@@ -180,7 +180,7 @@ Now go to http://localhost:8080 and **boom, WordPress is running!** 🎉
 
 Absolutely! Here’s a **beginner-friendly** list of essential **Docker Compose** commands you can include in your codelab.
 
-### **Docker Compose**
+## **Docker Compose**
 
 
 **Docker Compose** is a tool that helps you run apps that need **multiple containers** at once. Instead of running multiple docker run commands, you just define everything in a docker-compose.yml file and start it with one command! 🚀
