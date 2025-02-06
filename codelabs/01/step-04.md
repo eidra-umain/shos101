@@ -74,7 +74,7 @@ Normally, you'd need to:
 Now imagine if you had a ****pre-made cake mix**** with everything already inside.
 
 That’s exactly what ****a Docker container**** is! ****It already has everything inside**** so it runs without extra steps.
-
+<br/><br/>
 
 👉 ****A Docker container includes:****
 
@@ -155,8 +155,7 @@ In the **real world**, a Dockerfile is used to create **customized software envi
 ### **Basic Docker Commands 🏗️**
 
 Here are **just a few commands** to get started. We won’t overload you!
-
-
+<br/><br/>
 
 | **Command**  | **What it does 🛠️** |
 |---------------|---------------------|
@@ -167,7 +166,7 @@ Here are **just a few commands** to get started. We won’t overload you!
 |docker rm <container> | Removes a stopped container|
 
 
-
+<br/>
 Example: Want to **run WordPress** in seconds? Try this:
 
 
@@ -178,8 +177,6 @@ docker run -d -p 8080:80 wordpress
 
 Now go to http://localhost:8080 and **boom, WordPress is running!** 🎉
 
-Absolutely! Here’s a **beginner-friendly** list of essential **Docker Compose** commands you can include in your codelab.
-
 ## **Docker Compose**
 
 
@@ -188,15 +185,17 @@ Absolutely! Here’s a **beginner-friendly** list of essential **Docker Compose*
 
 **Example:** Running Supabase (which has multiple services like a database, API, and authentication) would be messy with many docker run commands. With Compose, you just write a simple file, and everything runs with:
 
+<br/>
+
 ```sh
 docker-compose up -d
 ```
 
-
+<br/>
 
 #### **📌 Essential Docker Compose Commands**
 
-
+<br/>
 
 ##### **🔹 Starting and Stopping Services**
 
@@ -219,6 +218,7 @@ docker-compose down
 
 Stops and **removes all** the containers, networks, and volumes **created by Compose**.
 
+<br/><br/><br/>
 ##### **🔹 Managing Containers**
 
 ```sh
@@ -230,9 +230,7 @@ Lists the **running** containers from the docker-compose.yml file.
 ```sh
 docker-compose restart
 ```
-
-
-##### **Restarts** all services.
+**Restarts** all services.
 
 ```sh
 docker-compose stop
@@ -246,6 +244,7 @@ docker-compose start
 
 Starts **previously stopped** containers.
 
+<br/><br/><br/>
 ##### **🔹 Viewing Logs and Status**
 
 
@@ -260,7 +259,6 @@ Shows the **logs** of all services.
 docker-compose logs -f
 ```
 
-
 Shows **real-time logs** (like tail -f).
 
 ```sh
@@ -269,14 +267,13 @@ docker-compose top
 
 Shows the running processes in **each container**.
 
-
+<br/><br/><br/>
 ##### **🔹 Executing Commands in a Running Container**
 
 
 ```sh
 docker-compose exec <service_name> sh
 ```
-
 
 Opens a **shell inside the container** (use bash instead of sh if available).
 
@@ -286,7 +283,7 @@ Example for **Supabase** (entering the database container):
 docker-compose exec db psql -U postgres
 ```
 
-
+<br/><br/><br/>
 ##### **🔹 Managing Images and Builds**
 
 
@@ -309,7 +306,7 @@ docker-compose up --build
 Builds images **before starting** the containers.
 
 
-
+<br/><br/><br/>
 ###### **🔹 Handling Volumes and Cleanup**
 
 
@@ -332,7 +329,7 @@ docker-compose rm
 
 Removes **stopped** containers.
 
-
+<br/><br/><br/>
 **🔥 TL;DR: Must-Know Commands**
 
 
