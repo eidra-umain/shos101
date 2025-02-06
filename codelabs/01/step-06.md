@@ -51,7 +51,6 @@ To run it in Docker, just enter this command:
 
 
 ```sh
-
 docker run -d -p 3000:3000 metabase/metabase
 ```
 
@@ -114,47 +113,116 @@ Want **Notion**, but without paying $$$? **AppFlowy** is the answer!
 
 
 ```sh
-docker run -d -p 5000:5000 appflowy/appflowy
+git clone https://github.com/AppFlowy-IO/AppFlowy-Cloud
+cd AppFlowy-Cloud
+```
+
+Setting up the .env file for AppFlowy
+
+First, we need to copy the  `.env`  file:
+
+```bash
+cp deploy.env .env
+```
+
+Start by pulling all of the relevant docker images:
+
+```bash
+docker compose pull
+```
+
+Now test that everything works by deploying the AppFlowy stack:
+
+```bash
+docker compose up -d
 ```
 
 
-📌 **Go to:** [http://localhost:5000](http://localhost:5000)
+📌 **Go to:** [http://localhost](http://localhost)
 
 📌 Start organizing **your life** for free!
-
 
 
 ### **5️⃣ Running LinShare (Self-Hosted File Sharing) 📂**
 
 
-
 Forget Google Drive—**LinShare** lets you store files **privately**.
 
 
+Clone the LinShare Repository:
 ```sh
-docker run -d -p 8081:8080 linshare/linshare
+git clone https://github.com/linagora/linshare-docker.git
+cd linshare-docker
 ```
 
+This command will start multiple containers, including:
 
-📌 **Go to:** [http://localhost:8081](http://localhost:8081)
+ - Tomcat with the LinShare server
+ - PostgreSQL and MongoDB databases
+ - Apache2 for the LinShare interfaces
+ - ClamAV for virus scanning
+ - LDAP directory for user management
+
+```sh
+docker  compose  up -d
+```
+
+Configure the Hosts File:
+
+Add the following entries to your /etc/hosts file to access the LinShare interfaces:
+
+```plaintext
+127.0.0.1 admin.linshare.local user.linshare.local linshare.local traefik.linshare.local
+```
+
+Access the LinShare Admin Interface:
+
+Once the containers are running, access the admin interface by navigating to 📌 **Go to:** [admin](https://admin.linshare.local) . Use the default credentials:
+
+> Username: `root@localhost.localdomain`
+
+> Password: `adminlinshare`
+
+From here, you can configure domains, LDAP connections, and other administrative settings.
 
 📌 Upload **any file**, share it securely.
 
 
-
 ### **6️⃣ Running Supabase (Firebase Alternative) 🛠️**
-
-
 
 Supabase = **a free, open-source Firebase alternative**!
 
 
+
+Get the code
 ```sh
-docker run -d -p 54321:54321 supabase/supabase
+git clone --depth 1 https://github.com/supabase/supabase
 ```
 
+Go to the docker folder
 
-📌 **Go to:** [http://localhost:54321](http://localhost:54321)
+```sh
+cd supabase/docker
+```
+
+Copy the fake env vars
+
+```sh
+cp .env.example .env
+```
+
+Pull the latest images
+
+```sh
+docker compose pull
+```
+
+Start the services (in detached mode)
+```sh
+docker compose up -d
+```
+
+📌 **Go to:** [http://localhost:8000](http://localhost:8000)
 
 📌 Set up a **backend for your apps** (without Google spying on you 👀).
 
@@ -167,12 +235,40 @@ docker run -d -p 54321:54321 supabase/supabase
 Airflow is used by **Netflix, Uber, and Spotify** to automate stuff!
 
 
+Fetching docker-compose.yaml [Docs Link](https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html#fetching-docker-compose-yaml)
+
 ```sh
-docker run -d -p 8082:8080 apache/airflow
+curl -LfO 'https://airflow.apache.org/docs/apache-airflow/2.10.4/docker-compose.yaml'
 ```
 
 
-📌 **Go to:** [http://localhost:8082](http://localhost:8082)
+##### Setting the right Airflow user[](https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html#setting-the-right-airflow-user "Permalink to this heading")
+
+On  **Linux**, the quick-start needs to know your host user id and needs to have group id set to  `0`. Otherwise the files created in  `dags`,  `logs`  and  `plugins`  will be created with  `root`  user ownership. You have to make sure to configure them for the docker-compose:
+
+```sh
+mkdir  -p  ./dags  ./logs  ./plugins  ./config
+echo  -e  "AIRFLOW_UID=$(id  -u)"  >  .env
+```
+
+
+#####  Initialize the database[](https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html#initialize-the-database "Permalink to this heading")
+
+On  **all operating systems**, you need to run database migrations and create the first user account. To do this, run.
+
+```sh
+docker  compose  up  airflow-init
+```
+
+##### Running Airflow[](https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html#running-airflow "Permalink to this heading")
+
+Now you can start all services:
+
+```sh
+docker  compose  up -d
+```
+
+📌 **Go to:** [http://localhost:8080](http://localhost:8080)
 
 📌 Automate tasks like **“Download new movies every Friday at 8 PM”** 🎥
 

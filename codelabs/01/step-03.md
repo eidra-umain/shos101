@@ -108,6 +108,8 @@ For those who like to dive deeper, here are some useful links:
 
 📖 **Docker Tutorial: A Step by Step Tutorial for Beginners:** [https://www.simplilearn.com/tutorials/docker-tutorial)
 
+📖 **Docker 101** [https://www.docker.com/101-tutorial/)
+
 ---
 
 [➡️ **Next**](step-04.md)

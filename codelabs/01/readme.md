@@ -42,4 +42,16 @@ In this codelab, you’ll:
 
 By the end, you’ll have your first self-hosted app up and running! 🚀
 
+
+If you’re looking for even more **self-hosted open-source projects**, check out these great resources:
+
+ - 🌐 [**Selfh.st**](https://selfh.st/apps/) – A curated list of self-hosted apps.
+
+ -  🚀 [**Awesome-Selfhosted**](https://awesome-selfhosted.net/) – A massive collection of open-source, self-hosted software.
+
+- 🔧 [**Hosted Software**](https://hostedsoftware.org/) – A categorized directory of self-hosted tools.
+
+
+These sites offer a **wide range of applications**, from productivity tools to media servers, that you can easily **host yourself using Docker**!
+
 [➡️ **Next**](step-02.md)
