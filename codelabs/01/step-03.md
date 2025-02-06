@@ -52,8 +52,11 @@ A **Docker Image** is like a **recipe** 📜 that contains everything needed to 
 
 #### **How it works:**
 1️⃣ You **download (pull) an image** from **Docker Hub** (like an app store for containers).
+
 2️⃣ You **create a container** from the image.
+
 3️⃣ The app runs inside the container.
+
 
 **Example:**
 If you want to self-host **Metabase**, you **pull the Metabase image** and create a container from it.
@@ -103,6 +106,8 @@ For those who like to dive deeper, here are some useful links:
 
 📖 **Self-Hosting Guide:** [https://selfhosted.libhunt.com/](https://selfhosted.libhunt.com/)
 
+📖 **Docker Tutorial: A Step by Step Tutorial for Beginners:** [https://www.simplilearn.com/tutorials/docker-tutorial)
+
 ---
 
-[➡️ **Next:**](step-03.md)
+[➡️ **Next:**](step-04.md)
