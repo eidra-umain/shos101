@@ -17,9 +17,15 @@ Welcome to this **beginner-friendly codelab**! Here, you’ll learn how to **sel
 By the end of this codelab, you’ll be able to **run self-hosted apps** on your own machine! 🎉
 
 
+## **🎧 Podcast Version Available!**
+
+I’ve also created a podcast version of this codelab using Google Notebook. It provides an audio walkthrough of the concepts, making it easier to follow along while on the go.🎙️
+
+<audio controls="controls"><source src="./codelabs/podcast.wav" type="audio/x-wav" /></audio>
+
+Also check [**Codelab Study Guide**](./codelabs/study-guide.md)
 
 ## **📌 Course Structure**
-
 
 
 This codelab is split into **two parts**:
@@ -98,7 +104,6 @@ This codelab is split into **two parts**:
 📌 [**Step 06: Running a Docker App on Heroku**](./codelabs/02/step-06.md)
 
 📌 [**Step 07: Exposing Your Local App to the Internet with Ngrok**](./codelabs/02/step-07.md)
-
 
 
 For now, let’s **get started with Docker**! 🎉
