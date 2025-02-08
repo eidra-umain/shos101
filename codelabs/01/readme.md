@@ -51,6 +51,8 @@ If you’re looking for even more **self-hosted open-source projects**, check ou
 
 - 🔧 [**Hosted Software**](https://hostedsoftware.org/) – A categorized directory of self-hosted tools.
 
+- 🔧 [**Open Source Alternative**](https://www.opensourcealternative.to/) – Open Source Alternatives To Proprietary Software.
+
 
 These sites offer a **wide range of applications**, from productivity tools to media servers, that you can easily **host yourself using Docker**!
 

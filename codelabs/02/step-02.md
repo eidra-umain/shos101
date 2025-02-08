@@ -9,11 +9,6 @@
 
 ---
 
-
-Got it! I’ll keep it **simple, concise, and informal** while covering the essential topics. Here’s the **Step-02.md** file draft:
-
-
-
 ## **Step 02: Understanding Git and Version Control**
 
 
