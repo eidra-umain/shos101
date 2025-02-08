@@ -33,7 +33,7 @@ This codelab is split into **two parts**:
 
 
 
-### 📍 [**Codelab 01 Readme**](./codelabs/01/README.md)
+### 📍 [**Codelab 01 Readme**](./codelabs/01/readme.md)
 
 
 #### **🔹 Understanding the Basics**
@@ -67,7 +67,7 @@ This codelab is split into **two parts**:
 
 
 
-### 📍 [**Codelab 02 Readme**](./codelabs/02/README.md)
+### 📍 [**Codelab 02 Readme**](./codelabs/02/readme.md)
 
 
 
