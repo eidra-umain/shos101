@@ -9,7 +9,7 @@
 
 ---
 
-## **Step 03: Git vs. GitHub & Alternatives
+## **Step 03: Git vs. GitHub & Alternatives**
 
 
 ### ****Skills Covered****
