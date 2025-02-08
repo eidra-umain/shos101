@@ -36,9 +36,7 @@ This codelab is split into **two parts**:
 ### 📍 [**Codelab 01 Readme**](./codelabs/01/README.md)
 
 
-
 #### **🔹 Understanding the Basics**
-
 
 
 📌 [**Step 02: Understanding Key Concepts**](./codelabs/01/step-02.md)
