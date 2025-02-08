@@ -29,11 +29,6 @@ This codelab is split into **two parts**:
 •  **Codelab 02** → Covers **Git, Heroku, and Deployment** (Day 2)
 
 
-
-Each codelab has an **internal README** for its index.
-
-
-
 ## **📂 Codelab 01: Docker & Self-Hosting**
 
 
