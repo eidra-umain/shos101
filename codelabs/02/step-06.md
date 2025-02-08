@@ -9,7 +9,7 @@
 
 ---
 
-## ****Running a Docker App on Heroku****
+## ****Step 06: Running a Docker App on Heroku****
 
 
 
