@@ -1,0 +1,8 @@
+{
+    "name": "SHOS - Recipe 01",
+    "description": "Self-Hosting Open-Source Tools 101",
+    "repository": "https://github.com/eidra-umain/shos101",
+    "logo": "https://cdn.rawgit.com/heroku/node-js-getting-started/main/public/node.svg",
+    "keywords": ["node", "heroku"],
+    "image": "heroku/nodejs"
+}

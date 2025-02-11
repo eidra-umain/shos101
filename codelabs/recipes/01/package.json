@@ -1,0 +1,30 @@
+{
+  "name": "shos-receipe-01",
+  "version": "1.0.0",
+  "description": "SHOS - Recipe 01",
+  "engines": {
+    "node": "18.x || 20.x || 22.x"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eidra-umain/shos101.git"
+  },
+  "keywords": [
+    "node",
+    "heroku"
+  ],
+  "author": "Jackson Mafra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eidra-umain/shos101/issues"
+  },
+  "homepage": "https://github.com/eidra-umain/shos101#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
