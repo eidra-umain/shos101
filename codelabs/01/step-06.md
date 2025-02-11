@@ -317,9 +317,11 @@ docker logs <container_id>
 
 ---
 
+<br/>
+
 > The more advanced stuff—like keeping apps running after a restart, updating them, and backing up data—will be in an intermediate/advanced course for those who need it.
 
-
+<br/>
 ---
 
 ## **📌 Official Docker Images & Documentation**
