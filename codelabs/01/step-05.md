@@ -43,6 +43,10 @@ We’ll install:
 
 ✅ ****VS Code / Sublime Text 3**** (for editing config files and code)
 
+✅ ****Python 3**** ( Required for some self-hosted tools and scripting)
+
+✅ ****Node.js & npm ****  (Essential for JavaScript-based applications)
+
 ---
 
 
@@ -200,6 +204,97 @@ sudo mv ngrok /usr/local/bin/
 ```sh
 ngrok authtoken YOUR_AUTH_TOKEN
 ```
+
+
+### Installing Python 3 🐍
+
+#### Windows
+
+1️⃣ Download Python 3: https://www.python.org/downloads/
+
+2️⃣ Run the installer and check the box “Add Python to PATH”.
+
+3️⃣ Verify the installation:
+
+```sh
+python --version
+```
+
+#### Mac
+
+1️⃣ Install Python 3 using Homebrew:
+
+```sh
+brew install python
+```
+
+2️⃣ Verify the installation:
+
+```sh
+python3 --version
+```
+
+#### Linux (Ubuntu/Debian)
+
+1️⃣ Install Python 3 via Terminal:
+
+```sh
+sudo apt install python3 python3-pip
+```
+
+2️⃣ Verify the installation:
+
+```sh
+python3 --version
+```
+
+
+### Installing Node.js & npm 🟢
+
+#### Windows
+
+1️⃣ Download Node.js (LTS version) from: https://nodejs.org/
+
+2️⃣ Run the installer (includes npm by default).
+
+3️⃣ Verify the installation:
+
+```sh
+node --version
+npm --version
+```
+
+#### Mac
+
+1️⃣ Install Node.js and npm using Homebrew:
+
+```sh
+brew install node
+```
+
+2️⃣ Verify the installation:
+
+```sh
+node --version
+npm --version
+```
+
+#### Linux (Ubuntu/Debian)
+
+1️⃣ Install Node.js and npm:
+
+```sh
+sudo apt install nodejs npm
+```
+
+2️⃣ Verify the installation:
+
+```sh
+node --version
+npm --version
+```
+
+This keeps the instructions short and consistent with the existing format. 🚀 Let me know if you need any tweaks!
 
 
 ### **Installing a Code Editor 📝**
