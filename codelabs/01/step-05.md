@@ -45,7 +45,7 @@ We’ll install:
 
 ✅ ****Python 3**** ( Required for some self-hosted tools and scripting)
 
-✅ ****Node.js & npm ****  (Essential for JavaScript-based applications)
+✅ ****Node.js & npm****  (Essential for JavaScript-based applications)
 
 ---
 
