@@ -114,6 +114,7 @@ sudo usermod -aG docker $USER
 docker --version
 ```
 
+---
 
 ### **Installing Git 🛠️**
 
@@ -164,6 +165,7 @@ sudo apt install git
 git --version
 ```
 
+---
 
 ### **Installing Ngrok 🌍**
 
@@ -205,6 +207,7 @@ sudo mv ngrok /usr/local/bin/
 ngrok authtoken YOUR_AUTH_TOKEN
 ```
 
+---
 
 ### Installing Python 3 🐍
 
@@ -247,6 +250,8 @@ sudo apt install python3 python3-pip
 ```sh
 python3 --version
 ```
+
+---
 
 
 ### Installing Node.js & npm 🟢
@@ -297,6 +302,8 @@ npm --version
 This keeps the instructions short and consistent with the existing format. 🚀 Let me know if you need any tweaks!
 
 
+---
+
 ### **Installing a Code Editor 📝**
 
 
@@ -332,6 +339,8 @@ ngrok --version
 
 If you see version numbers, **you’re ready to start! 🚀**
 
+---
+
 
 ### **References & Official Docs 📚**
 
@@ -343,6 +352,9 @@ If you see version numbers, **you’re ready to start! 🚀**
 
 📖 **VS Code:** [https://code.visualstudio.com/](https://code.visualstudio.com/)
 
+📖 **Node.js & NPM:** [https://nodejs.org/en/docs](https://nodejs.org/en/docs)
+
+📖 **Python:** [https://docs.python.org/3/](https://docs.python.org/3/)
 
 ---
 
