@@ -19,8 +19,6 @@ Now that we’ve installed all the tools, let’s talk about ****Docker**** and 
 You don’t need to be a ****developer**** to understand this—just think of it like organizing apps in little ****magic boxes**** that make running them easier.
 
 
-We won’t cover ****Compose, Swarm, or Networking****, just the basics to ****get you up and running****.
-
 ## ****Docker vs. Virtual Machines 🤖 vs. 🏠****
 
 
@@ -177,19 +175,108 @@ docker run -d -p 8080:80 wordpress
 
 Now go to http://localhost:8080 and **boom, WordPress is running!** 🎉
 
+## **🕸️ What is a Docker Network? (Explained Simply)**
+
+Think of Docker **containers** like **houses** in a city. 🏠🏠🏠
+
+•  Each house has **people inside** (applications running).
+
+•  To **talk to each other**, they need **streets and roads** (a network).
+
+
+
+Docker **networks** are like those streets. They **connect containers** so they can **communicate** safely. 🚗🚲
+
+> 🔹 Example: No Network = No Communication
+
+
+Imagine you have:
+
+•  A **WordPress container** 📝 (needs a database)
+
+•  A **MySQL container** 🗄️ (stores the data)
+
+If they are **not on the same network**, WordPress **can’t see** the database. 😢
+
+
+### **🛠 How to Create a Docker Network?**
+
+
+To create a network in Docker, run:
+
+```sh
+docker network create my-network
+```
+
+
+Now, when you **start containers**, put them on the **same network**:
+
+
+```sh
+docker run --name my-mysql --network my-network -e MYSQL_ROOT_PASSWORD=mysecret -d mysql:8.0
+
+docker run --name my-wordpress --network my-network -p 8080:80 -e WORDPRESS_DB_HOST=my-mysql -d wordpress
+```
+
+💡 **Now, WordPress and MySQL can talk because they are on the same “street”!** 🚗💬
+
+
+But if we **connect them** with a network, they can **talk** and WordPress can store and retrieve data. 🎉
+
 ## **Docker Compose**
 
 
 **Docker Compose** is a tool that helps you run apps that need **multiple containers** at once. Instead of running multiple docker run commands, you just define everything in a docker-compose.yml file and start it with one command! 🚀
 
+Lets use the example of WordPress.
+A better way is to use Docker Compose, so you don’t need to type long commands:
 
-**Example:** Running Supabase (which has multiple services like a database, API, and authentication) would be messy with many docker run commands. With Compose, you just write a simple file, and everything runs with:
+### 📝 Create a docker-compose.yml file:
+
+```yaml
+version: '3.8'
+
+services:
+  wordpress:
+    image: wordpress
+    restart: always
+    ports:
+      - 8080:80
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: exampleuser
+      WORDPRESS_DB_PASSWORD: examplepass
+      WORDPRESS_DB_NAME: exampledb
+    volumes:
+      - wordpress:/var/www/html
+
+  db:
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_DATABASE: exampledb
+      MYSQL_USER: exampleuser
+      MYSQL_PASSWORD: examplepass
+      MYSQL_RANDOM_ROOT_PASSWORD: '1'
+    volumes:
+      - db:/var/lib/mysql
+
+volumes:
+  wordpress:
+  db:
+```
+
+🚀 Run everything with:
+
+**Example:** Running WordPress (which has multiple services like a database, API) would be messy with many docker run commands.
+With Compose, you just write a simple file, and everything runs with:
 
 <br/>
 
 ```sh
 docker-compose up -d
 ```
+🔹 Open http://localhost:8080 and complete the WordPress setup.
 
 <br/>
 

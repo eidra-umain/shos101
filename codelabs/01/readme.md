@@ -36,9 +36,13 @@
 In this codelab, you’ll:
 
 1️⃣ Install and set up **Docker**
+
 2️⃣ Pull and run an open-source tool like **Metabase, WordPress, or n8n**
+
 3️⃣ Access your self-hosted tool from a browser
+
 4️⃣ Stop and restart your container
+
 
 By the end, you’ll have your first self-hosted app up and running! 🚀
 

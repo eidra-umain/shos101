@@ -73,7 +73,10 @@ Run this:
 
 
 ```sh
-docker run -d -p 8080:80 wordpress
+#First we Create a network
+docker network create codelab01
+docker run --name wp-mysql --network codelab01 -e MYSQL_ROOT_PASSWORD=myrootpass -e MYSQL_DATABASE=wordpress -e MYSQL_USER=wpuser -e MYSQL_PASSWORD=wppass -d mysql:8.0
+docker run --name wordpress --network codelab01 -p 8080:80 -e WORDPRESS_DB_HOST=wp-mysql -e WORDPRESS_DB_USER=wpuser -e WORDPRESS_DB_PASSWORD=wppass -e WORDPRESS_DB_NAME=wordpress -d wordpress
 ```
 
 
