@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "SHOS - Recipe 01",
   "engines": {
-    "node": "18.x || 20.x || 22.x"
+    "node": ">=22.0.0"
   },
   "main": "index.js",
   "scripts": {
